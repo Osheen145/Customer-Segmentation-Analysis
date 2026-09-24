@@ -10,7 +10,7 @@ The analysis identifies three customer groups:
 - **Regular Customers**
 - **At-Risk Customers**
 
-The results are presented through an interactive **Power BI dashboard** to understand customer behavior, product preferences, and geographic distribution.
+The results are presented through **interactive Tableau dashboards** to understand customer behavior, product preferences, and geographic distribution.
 
 ---
 
@@ -22,7 +22,7 @@ The results are presented through an interactive **Power BI dashboard** to under
 - Use silhouette analysis to select the appropriate number of clusters.
 - Analyze product preferences across customer segments.
 - Analyze customer distribution by country.
-- Create an interactive Power BI dashboard.
+- Create interactive Tableau dashboards.
 - Generate actionable business recommendations.
 
 ---
@@ -63,7 +63,7 @@ The project uses the **Online Retail Dataset** from Kaggle.
 - **Matplotlib**
 - **Seaborn**
 - **Jupyter Notebook**
-- **Microsoft Power BI**
+- **Tableau**
 - **Git & GitHub**
 
 ---
@@ -85,10 +85,9 @@ Silhouette Analysis
      ↓
 Customer Segmentation
      ↓
-Power BI Visualization
+Tableau Visualization
      ↓
 Business Insights & Recommendations
-```
 
 ---
 
@@ -182,57 +181,59 @@ At-Risk Customers have high recency and low purchase frequency, indicating reduc
 
 ---
 
-## Power BI Dashboard
+##Tableau Dashboards
 
-The project contains two dashboard pages.
+The project contains two interactive Tableau dashboards.
 
-### Page 1 — Customer Segmentation Dashboard
-
-The dashboard provides:
-
-- Total customers
-- Total revenue
-- Average customer spending
-- Number of customer segments
-- Customer distribution
-- Revenue contribution by segment
-- Average purchase frequency
-- Average recency
-
-### Page 2 — Customer Preferences & Demographics
+Dashboard 1 — Customer Segmentation Analysis
 
 The dashboard provides:
 
-- Customer Segment filter
-- Country filter
-- Top 10 customer countries
-- Top 10 products by customer segment
+Total Customers
+Total Revenue
+Average Customer Value
+Customer distribution by segment
+Revenue contribution by segment
+Customer Frequency vs Spending
+Average Recency by Segment
+Dashboard 2 — Customer Preferences & Demographics
 
-Dashboard screenshots are available in the `PowerBI` folder.
+The dashboard provides:
+
+Top 10 Countries by Customer Count
+Top 10 Products by Customer Segment
+Customer Segment filter
+Country filter
+Dashboard Preview
+Customer Segmentation Analysis
+
+Customer Preferences & Demographics
+
+The complete Tableau workbook containing both dashboards is available in the Tableau folder.
 
 ---
 
-## Key Business Insights
+##Key Business Insights
 
-### 1. High-Value Customers drive revenue
+###1. High-Value Customers drive revenue
 
-High-Value Customers represent approximately **22% of the customer base** but contribute approximately **57% of total revenue**.
+High-Value Customers represent approximately 22% of the customer base but contribute approximately 57% of total revenue.
 
-### 2. High-Value Customers are more active
+###2. High-Value Customers are more active
 
-Their average purchase frequency is **8.16**, compared with **2.46** for Regular Customers and **1.47** for At-Risk Customers.
+Their average purchase frequency is 8.16, compared with 2.46 for Regular Customers and 1.47 for At-Risk Customers.
 
-### 3. At-Risk Customers show low recent engagement
+###3. At-Risk Customers show low recent engagement
 
-At-Risk Customers have an average recency of approximately **245 days**, compared with approximately **27 days** for High-Value Customers.
+At-Risk Customers have an average recency of approximately 245 days, compared with approximately 27 days for High-Value Customers.
 
-### 4. Regular Customers are the largest segment
+###4. Regular Customers are the largest segment
 
-Regular Customers account for **2,327 customers**, representing roughly **54%** of the customer base.
+Regular Customers account for 2,327 customers, representing roughly 54% of the customer base.
 
-### 5. Product preferences can support targeted marketing
+###5. Product preferences can support targeted marketing
 
-The Power BI dashboard allows product purchasing patterns to be explored by customer segment, helping businesses design more relevant campaigns.
+The Tableau dashboard allows product purchasing patterns to be explored by customer segment, helping businesses design more relevant and personalized marketing campaigns.
 
 ---
 
@@ -254,11 +255,12 @@ Customer-Segmentation-Analysis/
 ├── Dataset/
 │   └── Online Retail.xlsx
 │
-├── PowerBI/
+├── Tableau/
+│   ├── Customer_Segmentation.twbx
 │   ├── customer_segments.csv
-│   ├── dashboard_page1.png
-│   ├── dashboard_page2.png
-│   └── product_preferences.csv
+│   ├── product_preferences.csv
+│   ├── dashboard_1.png
+│   └── dashboard_2.png
 │
 ├── Python/
 │   └── customer_segmentation.ipynb
@@ -274,7 +276,7 @@ Customer-Segmentation-Analysis/
 
 ## Conclusion
 
-This project demonstrates an end-to-end customer analytics workflow covering data cleaning, RFM analysis, feature scaling, K-Means clustering, Power BI visualization, and business interpretation.
+This project demonstrates an end-to-end customer analytics workflow covering data cleaning, RFM analysis, feature scaling, K-Means clustering, Tableau visualization, and business interpretation.
 
 The segmentation identifies valuable customers, regular customers with growth potential, and customers who may require reactivation. These insights can support targeted marketing, customer retention, personalized recommendations, and revenue growth.
 
